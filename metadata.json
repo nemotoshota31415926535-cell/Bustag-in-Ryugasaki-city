@@ -1,0 +1,6 @@
+{
+  "name": "龍ケ崎市コミュニティバス スタンプラリー",
+  "description": "龍ケ崎市のコミュニティバス停留所11箇所を巡るデジタルスタンプラリー。QRコードの読み取りと達成状況の自動記録が可能です。",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
