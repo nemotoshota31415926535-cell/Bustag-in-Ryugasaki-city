@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@keyframes laser {
+  0% { top: 10%; opacity: 0.3; }
+  50% { top: 90%; opacity: 1; }
+  100% { top: 10%; opacity: 0.3; }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes dash-reverse {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-laser {
+  animation: laser 3s infinite linear;
+  position: absolute;
+}
+
+.animate-dash {
+  animation: dash 2.5s infinite linear;
+}
+
+.animate-dash-reverse {
+  animation: dash-reverse 2.5s infinite linear;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Base resets for modern feel */
+body {
+  font-family: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Page transitions */
+.tab-pane {
+  animation: fadeIn 0.3s ease-out forwards;
+}
